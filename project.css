@@ -1,0 +1,1401 @@
+/******************************************************************************************************
+Purpose: Type CSS for Website Project Phase 2 of Felke-Morris 10e Book
+
+Author:  Alan Martinez-Lopez
+Date:    02/22/2021 [Monday] 
+         02/26/2021 [Friday]
+         03/02/2021 [Tuesday]
+         03/05/2021 [Friday] 
+         03/12/2021 [Saturday]
+         04/10/2021 [Saturday] - REVISED CONTENT TO INCLUDE MIN-WIDTH
+         04/11/2021 [Sunday] - Continue CSS: Fix Text Overlapping (Negative Margins Cause This)
+         04/18/2021 [Sunday] - Do & Finish Subgenres Navigation Links
+         04/23/2021 [Friday] - Do & Finish Form CSS 
+         04/25/2021 [Sunday] - Do & Finish Action CSS
+         04/25/2021 [Sunday] - Start Adventure CSS
+         04/28/2021 [Wednesday] - Finish Adventure & Horror CSS
+         04/29/2021 [Thursday] - Finish Psychological & Romance CSS
+         04/30/2021 [Friday] - Finish Movies & Services CSS
+         05/01/2021 [Saturday] - Finish Shop CSS (Webpages Done)
+         05/02/2021 [Sunday] - Webpages Finished + Maintenance
+
+*******************************************************************************************************/
+
+/* Configure & Structure Body Webpage Content */
+body {
+    color: #333D79;
+    background-color: #FAD0C9;
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 0;
+}
+
+/* Structure Main Webpage Content */
+main {
+    margin-left: 25px;
+    overflow: auto;
+    padding: 0 0 5em 0;
+}
+
+/* Structure Header Webpage Content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Configure & Structure Header Content */
+header {
+    background-color: #333D79;
+    padding-top: 1px;
+}
+
+/* Add Psuedo Class: Clear Effect So Header Sets Up & Appears */
+header:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Structure Webpage Logo Content */
+.logo {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/* Configure & Structure Navigation Content */
+nav a,
+nav li {
+    font-size: 150%;
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #FAD0C9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+/* Add Psuedo Class: Hover Effect for Navigation Links */
+nav a:hover {
+    color: #FFFFFF;
+}
+
+/* Add Psuedo Class: Hover Effect for External Link */
+#animeshop:hover {
+    color: #FFFFFF;
+}
+
+/* Configure Subgenre Navigation Links */
+#lnk,
+#lnk2,
+#lnk3,
+#lnk4,
+#lnk5,
+#lnk6 {
+    font-size: 12px;
+}
+
+/* Configure & Structure Heading Content */
+h1,
+h2,
+h3 {
+    margin: 50px 0px 0px 0px;
+    color: #5C4033;
+    text-shadow: 1px 1px 1px #505050;
+}
+
+/* Configure & Structure Paragraph Content */
+p {
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    font-size: 17px;
+    color: #5C4033;
+    padding-bottom: 25px;
+}
+
+/* Configure & Structure GIF */
+.kakashi {
+    border: 4px solid #5C4033;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    border-radius: 25px;
+    width: 235px;
+    height: 180px;
+}
+
+/* Configure & Structure IMG */
+.megumin {
+    border: 4px solid #5C4033;
+    float: right;
+    margin-left: 50px;
+    margin-top: -30px;
+    margin-right: 25px;
+    border-radius: 25px;
+    width: 230px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.hime {
+    border: 4px solid #5C4033;
+    float: right;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25px;
+    width: 200px;
+    height: 190px;
+}
+
+/* Configure & Structure IMG */
+.history {
+    border: 4px solid #5C4033;
+    float: right;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    width: 355px;
+    height: 250px;
+}
+
+/* Configure & Structure IMG */
+.storyboard {
+    border: 4px solid #5C4033;
+    float: right;
+    border-radius: 25px;
+    margin-left: 23px;
+    margin-right: 25px;
+    width: 355px;
+    height: 255px;
+}
+
+/* Configure & Structure IMG */
+.shaman {
+    border: 4px solid #5C4033;
+    float: right;
+    border-radius: 25px;
+    margin-right: 185px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    width: 230px;
+    height: 300px;
+}
+
+/* Configure & Structure IMG */
+.stone {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-right: 180px;
+    margin-bottom: 45px;
+}
+
+/* Configure & Structure IMG */
+.jjk {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-right: 180px;
+    margin-bottom: 45px;
+}
+
+/* Configure & Structure IMG */
+.genres {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 320px;
+    height: 350px;
+}
+
+/* Configure & Structure GIF */
+.battle {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 420px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.attackontitan {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.jujutsukaisen {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.naruto {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.demonslayer {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure GIF */
+.exploration {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 420px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.konosuba {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.goblinslayer {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.akamegakill {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.onepiece {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure GIF */
+.paranoia {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 420px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.parasyte {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.another {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.tokyoghoul {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.corpseparty {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure GIF */
+.intense {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 400px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.deathnote {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.mirainikki {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.kakegurui {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.monster {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure GIF */
+.blush {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 420px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.horimiya {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.rascal {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.april {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.clannad {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure GIF */
+.cinema {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 420px;
+    height: 350px;
+}
+
+/* Configure & Structure IMG */
+.asilentvoice {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.yourname {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.weathering {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.spiritedaway {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 250px;
+    height: 400px;
+}
+
+/* Configure & Structure IMG */
+.animeservice {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 425px;
+    height: 325px;
+}
+
+/* Configure & Structure IMG */
+.vrv {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 270px;
+    height: 260px;
+}
+
+/* Configure & Structure IMG */
+.crunchyroll {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 270px;
+    height: 260px;
+}
+
+/* Configure & Structure IMG */
+.funimation {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 270px;
+    height: 260px;
+}
+
+/* Configure & Structure IMG */
+.netflix {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 270px;
+    height: 260px;
+}
+
+/* Configure & Structure IMG */
+.hulu {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 270px;
+    height: 260px;
+}
+
+/* Configure & Structure IMG */
+.exclusives {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 400px;
+    height: 260px;
+}
+
+/* Configure & Structure IMG */
+.figures {
+    border: 4px solid #5C4033;
+    border-radius: 25px;
+    float: right;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 25px;
+    width: 300px;
+    height: 450px;
+}
+
+/* Configure UL & Structure, Seperate from Navigation ULs  */
+#benefits {
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    font-size: 17px;
+    color: #5C4033;
+    margin-top: -25px;
+}
+
+#products {
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    font-size: 17px;
+    color: #5C4033;
+}
+
+/* Structure Form */
+form {
+    margin-top: 15px;
+    width: 30%;
+}
+
+/* Configure & Structure Input & Label Form */
+input,
+label {
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    font-size: 17px;
+    color: #5C4033;
+    margin-bottom: 10px;
+}
+
+/* Structure Sign Up Button */
+#alignSignUp {
+    margin-top: 15px;
+}
+
+/* Configure & Structure Table */
+table {
+    margin: 0;
+    border: 4px solid #5C4033;
+    width: 550px;
+    border-spacing: 0;
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    color: #5C4033;
+    text-align: center;
+}
+
+/* Structure Table Footer: Center Text For One Column Tables */
+#onecolumn {
+    text-align: center;
+}
+
+/* Structure Table Footer: Center Text For One Column Tables (Avoids Duplicate ID Error) */
+#onecolumn2 {
+    text-align: center;
+}
+
+/* Structure Table Footer: Make Text Closer */
+#closer {
+    text-align: right;
+}
+
+/* Structure Table Footer: Make Text Closer */
+tfoot {
+    text-align: left;
+}
+
+/* Configure First Row: Avoids Two Brown Rows */
+#first {
+    background-color: #FAE9C9;
+    color: #5C4033;
+}
+
+/* Configure First Row: Avoids Two Brown Rows (Avoids Duplicate ID Error) */
+#first2 {
+    background-color: #FAE9C9;
+    color: #5C4033;
+}
+
+/* Configure First Row: Avoids Two Brown Rows (Avoids Duplicate ID Error) */
+#first3 {
+    background-color: #FAE9C9;
+    color: #5C4033;
+}
+
+/* Strucuture Table Data Cell & Table Header */
+td,
+th {
+    padding: 0.5em;
+    border-style: none;
+}
+
+/* Configure Table Header */
+th {
+    font-size: 1.15em;
+}
+
+/* Configure Even Table Rows */
+tr:nth-of-type(even) {
+    background-color: #FAD0C9;
+}
+
+/* Configure First Table Row */
+tr:first-of-type {
+    background-color: #5C4033;
+    color: #FFFFFF;
+}
+
+/* Configure & Structure Footer */
+footer {
+    color: #FAD0C9;
+    background-color: #333D79;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Configure Footer Hyperlink Color ONLY */
+.footerLink {
+    color: #FAD0C9;
+}
+
+/* Configure & Structure Wrapper Content: Wrap & Center Webpage */
+#wrapper {
+    background-color: #FAE9C9;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    min-width: 600px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px #505050;
+    padding: 0;
+}
+
+/* Responsive Design: Small & Medium Displays */
+@media (min-width: 600px) {
+
+    .logo {
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 100px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0;
+        padding-top: 25px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    #floatlnk {
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-bottom: 0px;
+    }
+
+    #positionlnk {
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-bottom: 0px;
+    }
+
+    #lnk,
+    #lnk2,
+    #lnk3,
+    #lnk4,
+    #lnk5,
+    #lnk6 {
+        font-size: 10px;
+    }
+    
+    form {
+        margin-top: 15px;
+        width: 22%;
+    }
+
+    input,
+    label {
+        font-family: cursive, Tahoma, Arial, sans-serif;
+        font-size: 17px;
+        color: #5C4033;
+        margin-bottom: 10px;
+    }
+
+    #alignSignUp {
+        margin-top: 19px;
+    }
+
+    .kakashi {
+        margin-left: 50px;
+        width: 215px;
+        height: 150px;
+    }
+
+    .megumin {
+        margin-left: 50px;
+        width: 245px;
+        height: 420px;
+    }
+
+    .hime {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 205px;
+        height: 190px;
+    }
+
+    .history {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 420px;
+        height: 325px;
+    }
+
+    .storyboard {
+        margin-left: 23px;
+        margin-right: 25px;
+        width: 420px;
+        height: 325px;
+    }
+
+    .shaman {
+        width: 225px;
+        height: 350px;
+        margin-right: 200px;
+    }
+
+    .stone {
+        margin-right: 350px;
+        margin-bottom: 45px;
+    }
+
+    .jjk {
+        margin-right: 350px;
+        margin-bottom: 45px;
+    }
+
+    .genres {
+        margin-left: 20px;
+        margin-right: 30px;
+        width: 380px;
+        height: 335px;
+    }
+
+    .battle {
+        width: 350px;
+        height: 300px;
+    }
+
+    .attackontitan {
+        width: 280px;
+        height: 350px;
+    }
+
+    .jujutsukaisen {
+        width: 280px;
+        height: 350px;
+    }
+
+    .naruto {
+        width: 280px;
+        height: 350px;
+    }
+
+    .demonslayer {
+        width: 280px;
+        height: 350px;
+    }
+
+    .exploration {
+        width: 350px;
+        height: 300px;
+    }
+
+    .konosuba {
+        width: 280px;
+        height: 350px;
+    }
+
+    .goblinslayer {
+        width: 280px;
+        height: 350px;
+    }
+
+    .akamegakill {
+        width: 280px;
+        height: 350px;
+    }
+
+    .onepiece {
+        width: 280px;
+        height: 350px;
+    }
+
+    .paranoia {
+        width: 350px;
+        height: 300px;
+    }
+
+    .parasyte {
+        width: 280px;
+        height: 350px;
+    }
+
+    .another {
+        width: 280px;
+        height: 350px;
+    }
+
+    .tokyoghoul {
+        width: 280px;
+        height: 350px;
+    }
+
+    .corpseparty {
+        width: 280px;
+        height: 350px;
+    }
+
+    .intense {
+        width: 350px;
+        height: 300px;
+    }
+
+    .deathnote {
+        width: 280px;
+        height: 350px;
+    }
+
+    .mirainikki {
+        width: 280px;
+        height: 350px;
+    }
+
+    .kakegurui {
+        width: 280px;
+        height: 350px;
+    }
+
+    .monster {
+        width: 280px;
+        height: 350px;
+    }
+
+    .blush {
+        width: 350px;
+        height: 300px;
+    }
+
+    .horimiya {
+        width: 280px;
+        height: 350px;
+    }
+
+    .rascal {
+        width: 280px;
+        height: 350px;
+    }
+
+    .april {
+        width: 280px;
+        height: 350px;
+    }
+
+    .clannad {
+        width: 280px;
+        height: 350px;
+    }
+
+    .cinema {
+        width: 350px;
+        height: 300px;
+    }
+
+    .asilentvoice {
+        width: 280px;
+        height: 350px;
+    }
+
+    .yourname {
+        width: 280px;
+        height: 350px;
+    }
+
+    .weathering {
+        width: 280px;
+        height: 350px;
+    }
+
+    .spiritedaway {
+        width: 280px;
+        height: 350px;
+    }
+
+    .animeservice {
+        width: 400px;
+        height: 275px;
+    }
+
+    .vrv {
+        width: 300px;
+        height: 300px;
+    }
+
+    .crunchyroll {
+        width: 300px;
+        height: 300px;
+    }
+
+    .funimation {
+        width: 300px;
+        height: 300px;
+    }
+
+    .netflix {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hulu {
+        width: 300px;
+        height: 300px;
+    }
+
+    .exclusives {
+        width: 370px;
+        height: 255px;
+    }
+
+    .figures {
+        width: 325px;
+        height: 450px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+/* Responsive Design: Medium-Large & Large Displays */
+@media (min-width: 1024px) {
+
+    .logo {
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+        margin-left: 65px;
+        float: left;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    nav {
+        float: right;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 38px;
+        padding-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        color: #FAD0C9;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    #floatlnk {
+        margin: auto;
+    }
+
+    #positionlnk {
+        margin: auto;
+    }
+
+    #lnk,
+    #lnk2,
+    #lnk3,
+    #lnk4,
+    #lnk5,
+    #lnk6 {
+        font-size: 13px;
+    }
+
+    form {
+        margin-top: 15px;
+        width: 22%;
+    }
+
+    input,
+    label {
+        font-family: cursive, Tahoma, Arial, sans-serif;
+        font-size: 17px;
+        color: #5C4033;
+        margin-bottom: 10px;
+        margin-right: 11px;
+    }
+
+    #alignSignUp {
+        margin-top: 19px;
+    }
+
+    .kakashi {
+        margin-left: 25px;
+        width: 220px;
+        height: 150px;
+    }
+
+    .megumin {
+        margin-left: 25px;
+        width: 300px;
+        height: 420px;
+    }
+
+    .hime {
+        margin-left: 30px;
+        margin-right: 110px;
+        width: 205px;
+        height: 190px;
+    }
+
+    .history {
+        margin-left: 50px;
+        margin-right: 25px;
+        margin-top: 5px;
+        width: 420px;
+        height: 325px;
+    }
+
+    .storyboard {
+        margin-left: 23px;
+        margin-right: 20px;
+        width: 420px;
+        height: 325px;
+    }
+
+    .shaman {
+        margin-right: 100px;
+        margin-top: 335px;
+        width: 235px;
+        height: 350px;
+    }
+
+    .stone {
+        margin-right: 100px;
+        margin-top: 150px;
+        width: 235px;
+        height: 350px;
+    }
+
+    .jjk {
+        margin-right: 100px;
+        margin-top: 150px;
+        width: 235px;
+        height: 350px;
+    }
+
+    .genres {
+        width: 420px;
+        height: 355px;
+    }
+
+    .battle {
+        width: 360px;
+        height: 250px;
+    }
+
+    .attackontitan {
+        width: 200px;
+        height: 280px;
+    }
+
+    .jujutsukaisen {
+        width: 200px;
+        height: 280px;
+    }
+
+    .naruto {
+        width: 200px;
+        height: 280px;
+    }
+
+    .demonslayer {
+        width: 200px;
+        height: 280px;
+    }
+
+    .exploration {
+        width: 360px;
+        height: 250px;
+    }
+
+    .konosuba {
+        width: 200px;
+        height: 280px;
+    }
+
+    .goblinslayer {
+        width: 200px;
+        height: 280px;
+    }
+
+    .akamegakill {
+        width: 200px;
+        height: 280px;
+    }
+
+    .onepiece {
+        width: 200px;
+        height: 280px;
+    }
+
+    .paranoia {
+        width: 360px;
+        height: 250px;
+    }
+
+    .parasyte {
+        width: 200px;
+        height: 280px;
+    }
+
+    .another {
+        width: 200px;
+        height: 280px;
+    }
+
+    .tokyoghoul {
+        width: 200px;
+        height: 280px;
+    }
+
+    .corpseparty {
+        width: 200px;
+        height: 280px;
+    }
+
+    .intense {
+        width: 360px;
+        height: 250px;
+    }
+
+    .deathnote {
+        width: 200px;
+        height: 280px;
+    }
+
+    .mirainikki {
+        width: 200px;
+        height: 280px;
+    }
+
+    .kakegurui {
+        width: 200px;
+        height: 280px;
+    }
+
+    .monster {
+        width: 200px;
+        height: 280px;
+    }
+
+    .blush {
+        width: 360px;
+        height: 250px;
+    }
+
+    .horimiya {
+        width: 200px;
+        height: 280px;
+    }
+
+    .rascal {
+        width: 200px;
+        height: 280px;
+    }
+
+    .april {
+        width: 200px;
+        height: 280px;
+    }
+
+    .clannad {
+        width: 200px;
+        height: 280px;
+    }
+
+    .cinema {
+        width: 360px;
+        height: 250px;
+    }
+
+    .asilentvoice {
+        width: 200px;
+        height: 280px;
+    }
+
+    .yourname {
+        width: 200px;
+        height: 280px;
+    }
+
+    .weathering {
+        width: 200px;
+        height: 280px;
+    }
+
+    .spiritedaway {
+        width: 200px;
+        height: 280px;
+    }
+
+    .animeservice {
+        width: 360px;
+        height: 250px;
+    }
+
+    .vrv {
+        width: 225px;
+        height: 255px;
+    }
+
+    .crunchyroll {
+        width: 225px;
+        height: 255px;
+    }
+
+    .funimation {
+        width: 225px;
+        height: 255px;
+    }
+
+    .netflix {
+        width: 225px;
+        height: 255px;
+    }
+
+    .hulu {
+        width: 225px;
+        height: 255px;
+    }
+
+    .exclusives {
+        width: 350px;
+        height: 205px;
+    }
+
+    .figures {
+        width: 350px;
+        height: 450px;
+    }
+
+    footer {
+        font-size: .75em;
+    }
+}

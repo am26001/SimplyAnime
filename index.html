@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Purpose: To Create the Website Project Introduced at the end of Chapter 05
+        CMPSC 206 Spring 2021, Saint Xavier University
+        
+Name: Alan Martinez-Lopez
+Date: 02/22/2021 [Monday]
+      02/26/2021 [Friday] 
+      03/02/2021 [Tuesday]
+      03/05/2021 [Friday] 
+      03/12/2021 [Saturday]
+      03/18/2021 [Thursday]
+      03/26/2021 [Friday] - Responsive Design
+      03/27/2021 [Saturday] - Responsive Design
+      03/28/2021 [Sunday] - Responsive Design
+      04/10/2021 [Saturday] - REVISED FOR RESPONSIVE DESIGN USING MIN-WIDTH
+      04/23/2021 [Friday] - Make Form Active
+      04/25/2021 [Sunday] - Finish Form
+      
+File Name: index.html
+
+-->
+
+<head>
+    <!-- Specify Character Encoding for HTML ! -->
+    <meta charset="UTF-8">
+    <!-- Specify Viewport to Control Page Dimensions & Scaling ! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title Page for Webpage !-->
+    <title>SimplyAnime Home</title>
+    <!-- Allows HTML File to Use CSS Stylesheet !-->
+    <link rel="stylesheet" href="project.css">
+    <!-- Add Favicon to the Webpage's Tab !-->
+    <link rel="icon" href="images/sharingan.png">
+</head>
+
+<body>
+    <!-- Wrap Entire Webpage Content !-->
+    <div id="wrapper">
+        <header>
+            <!-- Contain Navigation Links Within Header !-->
+            <div class="container">
+                <!-- Add Webpage Logo !-->
+                <img src="images/sharingan.png" alt="Sharingan logo" class="logo" width="50" height="50">
+                <!-- Add Navigation Links to Different Webpages !-->
+                <nav>
+                    <!-- Create List of Navigation Links !-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="list.html">List</a></li>
+                        <li><a href="genres.html">Genres</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Main Content of Webpage !-->
+        <main>
+            <!-- Add First Heading !-->
+            <h1>Welcome To SimplyAnime</h1>
+            <p>
+                <!-- Add GIF Image !-->
+                <img src="images/kakashi.webp" alt="Kakashi Waving" width="220" height="150" class="kakashi">
+                SimplyAnime is a friendly place where you can explore anime! Whether you are new to anime, SimplyAnime will be a good place for you to get hooked into watching anime. If you are already an anime fan, you will learn about the latest and upcoming anime shows that you could possibly watch.
+            </p>
+            <p>If you are interested in keeping up with the latest news on anime, please feel free to sign up to our SimplyAnime newsletter.</p>
+
+            <!-- Add Second Heading !-->
+            <h2>Why Join SimplyAnime?</h2>
+
+            <p>Signing up only takes seconds. After signing up, please expect an email from us regarding your registration.<br>
+                We hope you enjoy our free services. Here are the benefits for signing up!</p>
+            <!-- Add Image !-->
+            <img src="images/megumin.webp" alt="Megumin Thumbs Up" width="300" height="420" class="megumin">
+            <!-- ID for Proper Spacing !-->
+            <ul id="benefits">
+                <!-- Create List !-->
+                <li>Receive news from SimplyAnime</li>
+                <li>Learn how anime is created</li>
+                <li>Be notified of recently released or upcoming anime shows</li>
+                <li>Discover different anime genres</li>
+                <li>See which services you can watch old and new anime shows</li>
+                <li>Shop for amazing products</li>
+                <li>Because we care about our fans, our newsletter is free</li>
+                <li>AND MORE</li>
+            </ul>
+
+            <!-- Add Third Heading !-->
+            <h3>Sign Up For Updates</h3>
+
+            <!-- Create Sign Up Form & Send Data !-->
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+                <label for="myEmail">E-mail: </label>
+                <input type="email" placeholder="someone@gmail.com" id="myEmail" name="myEmail" required>
+
+                <label for="myUsername">Username: </label>
+                <input type="text" placeholder="Jobbaffet" id="myUsername" name="myUsername" required>
+
+                <label for="myPassword">Create Password: </label>
+                <input type="password" placeholder="************" id="myPassword" name="myPassword" required>
+
+                <label for="myConfirmedPassword">Confirm Password: </label>
+                <input type="password" placeholder="************" id="myConfirmedPassword" name="myConfirmedPassword" required>
+
+                <br><input type="checkbox" required>
+                <label class="labelsize">I am not a robot</label>
+                <input type="submit" id="alignSignUp" value="Sign Up">
+
+            </form>
+
+            <br><br>
+
+            <!-- Add Company Information !-->
+            <p><br>Pulaski 9876 West 21st<br>
+                Chicago, IL 1337<br>
+                773-298-4567
+            </p>
+        </main>
+
+        <!-- Add Footer for Contact !-->
+        <footer>
+            &copy; 2021 SimplyAnime - All Rights Reserved<br>
+            <a class="footerLink" href="mailto:martinezlopez.a01@mymail.sxu.edu">martinezlopez.a01@mymail.sxu.edu</a>
+        </footer>
+    </div>
+</body>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Purpose: To Create the Website Project Intdoduced at the end of Chapter 05
+        CMPSC 206 Spring 2021, Saint Xavier University
+          
+Name: Alan Martinez-Lopez
+Date: 02/22/2021 [Monday]
+      03/05/2021 [Friday]
+      03/26/2021 [Friday] - Content + Responsive Design 
+      03/27/2021 [Saturday]
+      04/10/2021 [Saturday] - REVISED FOR RESPONSIVE DESIGN USING MIN-WIDTH
+      04/11/2021 [Sunday] - Finish Table
+      
+File Name: list.html
+
+-->
+
+<head>
+    <!-- Specify Character Encoding for HTML ! -->
+    <meta charset="UTF-8">
+    <!-- Specify Viewport to Contdol Page Dimensions & Scaling ! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title Page for Webpage !-->
+    <title>SimplyAnime List</title>
+
+    <!-- Allows HTML File to Use CSS Stylesheet !-->
+    <link rel="stylesheet" href="project.css">
+
+    <!-- Add Favicon to the Webpage's Tab !-->
+    <link rel="icon" href="images/sharingan.png">
+</head>
+
+<body>
+    <!-- Wrap Entire Webpage Content !-->
+    <div id="wrapper">
+        <header>
+            <!-- Contain Navigation Links Within Header !-->
+            <div class="container">
+                <!-- Add Webpage Logo !-->
+                <img src="images/sharingan.png" alt="Sharingan logo" class="logo" width="50" height="50">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="list.html">List</a></li>
+                        <li><a href="genres.html">Genres</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Add First Header !-->
+            <h1>What Is In Store For You?</h1>
+            <!-- Add IMG !-->
+            <img src="images/shamanking.jpg" alt="Shaman King" class="shaman" width="235" height="350">
+            <p>There are a lot of anime shows that people are excited for in 2021. What new<br>
+                journey awaits
+                you? Below is a list of Summer and Fall 2021, unreleased, and<br>
+                recommended anime shows!
+            </p>
+            <!-- Add First Table Of Upcoming Anime Shows !-->
+            <table>
+                <!-- Configure Table Header !-->
+                <thead>
+                    <tr>
+                        <th>Summer 2021</th>
+                        <th>Fall 2021</th>
+                    </tr>
+                </thead>
+                <!-- Configure Table Body: Contains Most Table Row & Data Cell Content !-->
+                <tbody>
+                    <tr id="first">
+                        <td>I’m Standing on a Million Lives, Season 2</td>
+                        <td>The Dungeon of Black Company</td>
+                    </tr>
+                    <tr>
+                        <td>Miss Kobayashi’s Dragon Maid S</td>
+                        <td>Idaten Deities in the Peaceful Generation</td>
+                    </tr>
+                    <tr>
+                        <td>My Next Life as a Villainess&#58; All Routes Lead to Doom!</td>
+                        <td>Life Lessons with Uramichi Oniisan</td>
+                    </tr>
+                    <tr>
+                        <td>The World’s Finest Assassin Gets Reincarnated in Another World as an Aristocrat</td>
+                        <td>Banished from the Hero’s Party, I Decided to Live a Quiet Life in the Countdyside</td>
+                    </tr>
+                    <tr>
+                        <td>The Detective Is Already Dead</td>
+                        <td>Higurashi&#58; When They Cry &ndash; SOTSU</td>
+                    </tr>
+                    <tr>
+                        <td>That Time I Got Reincarnated as a Slime, Season 2 &#40;Part 2&#41;</td>
+                        <td>Scarlet Nexus</td>
+                    </tr>
+                    <tr>
+                        <td>Girlfriend, Girlfriend</td>
+                        <td>The Honor Student at Magic High School</td>
+                    </tr>
+                    <tr>
+                        <td>The Duke of Death and His Maid</td>
+                        <td>IDOLiSH7, Season 3</td>
+                    </tr>
+                    <tr>
+                        <td>The Rising of The Shield Hero, Season 2</td>
+                        <td>Date A Live IV</td>
+                    </tr>
+                    <tr>
+                        <td>World Trigger, Season 3</td>
+                        <td>The Vampire Dies in No Time</td>
+                    </tr>
+                    <tr>
+                        <td>Platinum End</td>
+                        <td>Taisho Maiden Fairytale</td>
+                    </tr>
+                    <tr>
+                        <td>Kyoukai Senki</td>
+                        <td>Requiem of the Rose King</td>
+                    </tr>
+                    <tr>
+                        <td>Record of Ragnarok</td>
+                        <td>Tate no Yuusha no Nariagari, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Mushoku Tensei&#58; Isekai Ittara Honki Dasu, Season 3</td>
+                        <td>Sacks &amp; Guns!!</td>
+                    </tr>
+                    <tr>
+                        <td>100&#45;man no Inochi no Ue ni Ore wa Tatteiru, Season 2</td>
+                        <td>Muv&#45;Luv Alternative</td>
+                    </tr>
+                    <tr>
+                        <td>Tantei wa Mou, Shindeiru</td>
+                        <td>Ousama Ranking</td>
+                    </tr>
+                    <tr>
+                        <td>Higurashi no Naku Koro ni Sotsu</td>
+                        <td>Taishou Otome Otogibanashi</td>
+                    </tr>
+                    <tr>
+                        <td>Genjitsu Shugi Yuusha no Oukoku Saikenki</td>
+                        <td>Baraou no Souretsu</td>
+                    </tr>
+                    <tr>
+                        <td>Love Live! Superstar!!</td>
+                        <td>Kyuuketsuki Sugu Shinu</td>
+                    </tr>
+                    <tr>
+                        <td>Kanojo mo Kanojo</td>
+                        <td>Puraore! Pride of Orange</td>
+                    </tr>
+                    <tr>
+                        <td>Vanitas no Carte</td>
+                        <td>Visual Prison</td>
+                    </tr>
+                    <tr>
+                        <td>Cheat Kusushi no Slow Life&#58; Isekai ni Tsukurou Drugstore</td>
+                        <td>Kyoukai Senki</td>
+                    </tr>
+                    <tr>
+                        <td>Bokutachi no Remake</td>
+                        <td>Shaman King</td>
+                    </tr>
+                    <tr>
+                        <td>Shiroi Suna no Aquatope</td>
+                        <td>Shikizakura</td>
+                    </tr>
+                    <tr>
+                        <td>Peach Boy Riverside</td>
+                        <td>SAKUGAN</td>
+                    </tr>
+                    <tr>
+                        <td>Meikyuu Black Company</td>
+                        <td>Cardfight!! Vanguard overDress, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Uramichi Oniisan</td>
+                        <td>Visual Prison</td>
+                    </tr>
+                    <tr>
+                        <td>Night Head 2041</td>
+                        <td>Muteking the Dancing Hero</td>
+                    </tr>
+                    <tr>
+                        <td>Shinigami Bocchan to Kuro Maid</td>
+                        <td>Chickip Dancers</td>
+                    </tr>
+                    <tr>
+                        <td>Scarlet Nexus</td>
+                        <td>When Will Ayumu Make His Move?</td>
+                    </tr>
+                    <tr>
+                        <td>Tsukipro The Animation 2</td>
+                        <td>Gunma&#45;chan</td>
+                    </tr>
+                    <tr>
+                        <td>Ore, Tsushima</td>
+                        <td>Penguin &amp; House</td>
+                    </tr>
+                    <tr>
+                        <td>Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</td>
+                        <td>Vampire Dormitory</td>
+                    </tr>
+                    <tr>
+                        <td>Wonder Egg Priority Special Edition</td>
+                        <td>Bomba!</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Reflection Ray</td>
+                        <td>Lovesick Ellie</td>
+                    </tr>
+                </tbody>
+                <!-- Configure Table Footer !-->
+                <tfoot>
+                    <tr>
+                        <td id="closer">Credits to&#58;</td>
+                        <td>MyAnimeList</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Add Space Between Tables !-->
+            <br><br>
+
+            <!-- Add IMG !-->
+            <img src="images/drstone.webp" alt="Dr.Stone" class="stone" width="235" height="350">
+
+            <!-- Second Table For Released Anime !-->
+            <table>
+                <!-- Configure Table Header !-->
+                <thead>
+                    <tr>
+                        <th>Released Anime Shows</th>
+                    </tr>
+                </thead>
+                <!-- Configure Table Body: Contains Most Table Row & Data Cell Content !-->
+                <tbody>
+                    <tr id="first2">
+                        <td>Attack on Titan&#58; The Final Season</td>
+                    </tr>
+                    <tr>
+                        <td>Jujutsu Kaisen</td>
+                    </tr>
+                    <tr>
+                        <td>Suppose a Kid from the Last Dungeon Boonies Moved to a Starter Town</td>
+                    </tr>
+                    <tr>
+                        <td>Otherside Picnic</td>
+                    </tr>
+                    <tr>
+                        <td>Gekidol</td>
+                    </tr>
+                    <tr>
+                        <td>Beastars, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>The Promised Neverland, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>The Seven Deadly Sins&#58; Dragon’s Judgement</td>
+                    </tr>
+                    <tr>
+                        <td>Re:Zero &#45; Starting Life in Another World, Season 2 &#40;Part 2&#41;</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensia Saga</td>
+                    </tr>
+                    <tr>
+                        <td>The Quintessential Quintuplets, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Beastars, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Heaven’s Design Team</td>
+                    </tr>
+                    <tr>
+                        <td>Laid&#45;Back Camp, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Cells at Work! Code Black</td>
+                    </tr>
+                    <tr>
+                        <td>Cells At Work!, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>2.43&#58; Seiin Koukou Danshi Volley&#45;bu</td>
+                    </tr>
+                    <tr>
+                        <td>Bottom&#45;tier Character Tomozaki</td>
+                    </tr>
+                    <tr>
+                        <td>Back Arrow</td>
+                    </tr>
+                    <tr>
+                        <td>The Hidden Dungeon Only I Can Enter</td>
+                    </tr>
+                    <tr>
+                        <td>Project Scard: Scar on the Praeter</td>
+                    </tr>
+                    <tr>
+                        <td>So I’m a Spider, So What?</td>
+                    </tr>
+                    <tr>
+                        <td>SK8 the Infinity</td>
+                    </tr>
+                    <tr>
+                        <td>World Trigger, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Horimiya</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Ramune Mysterious Disease Specialist</td>
+                    </tr>
+                    <tr>
+                        <td>Kemono Jihen</td>
+                    </tr>
+                    <tr>
+                        <td>Mushoku Tensei&#58; Jobless Reincarnation</td>
+                    </tr>
+                    <tr>
+                        <td>Non Non Biyori, Season 3</td>
+                    </tr>
+                    <tr>
+                        <td>Skate&#45;Leading Stars</td>
+                    </tr>
+                    <tr>
+                        <td>Yatogame&#45;chan Kansatsu Nikki Sansatsume</td>
+                    </tr>
+                    <tr>
+                        <td>Ex&#45;Arm</td>
+                    </tr>
+                    <tr>
+                        <td>WAVE!! Let’s go surfing!!</td>
+                    </tr>
+                    <tr>
+                        <td>That Time I Got Reincarnated as a Slime, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Wonder Egg Priority</td>
+                    </tr>
+                    <tr>
+                        <td>Bungo Stray Dogs Wan!</td>
+                    </tr>
+                    <tr>
+                        <td>Log Horizon, Season 3</td>
+                    </tr>
+                    <tr>
+                        <td>Redo of Healer</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Stone&#58; Stone Wars</td>
+                    </tr>
+                    <tr>
+                        <td>Sorcerous Stabber Orphen, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>The New Prince of Tennis&#58; Hyotei vs. Rikkai</td>
+                    </tr>
+                    <tr>
+                        <td>Thus Spoke Kishibe Rohan</td>
+                    </tr>
+                    <tr>
+                        <td>High&#45;Rise Invasion</td>
+                    </tr>
+                    <tr>
+                        <td>Pacific Rim&#58; The Black</td>
+                    </tr>
+                    <tr>
+                        <td>B&#58; The Beginning Succession</td>
+                    </tr>
+                    <tr>
+                        <td>My Hero Academia, Season 5</td>
+                    </tr>
+                    <tr>
+                        <td>SSSS.Dynazenon</td>
+                    </tr>
+                    <tr>
+                        <td>Burning Kabaddi</td>
+                    </tr>
+                    <tr>
+                        <td>Mashiro no Oto</td>
+                    </tr>
+                    <tr>
+                        <td>Vivy &#45;Fluorite Eye’s Song&#45;</td>
+                    </tr>
+                    <tr>
+                        <td>Kingdom, Season 3</td>
+                    </tr>
+                    <tr>
+                        <td>Megalobox 2&#58; Nomad</td>
+                    </tr>
+                    <tr>
+                        <td>Moriarty the Patriot Part 2</td>
+                    </tr>
+                    <tr>
+                        <td>Combatants Will Be Dispatched!</td>
+                    </tr>
+                    <tr>
+                        <td>Dragon Goes House&#45;Hunting</td>
+                    </tr>
+                    <tr>
+                        <td>Farewell, My Dear Cramer</td>
+                    </tr>
+                    <tr>
+                        <td>Fruits Basket&#58; The Final Season</td>
+                    </tr>
+                    <tr>
+                        <td>MARS RED</td>
+                    </tr>
+                    <tr>
+                        <td>Koikimo</td>
+                    </tr>
+
+                    <tr>
+                        <td>ODDTAXI</td>
+                    </tr>
+                    <tr>
+                        <td>The Saint’s Magic Power Is Omnipotent</td>
+                    </tr>
+                    <tr>
+                        <td>The Slime Diaries</td>
+                    </tr>
+                    <tr>
+                        <td>Joran&#58; The Princess of Snow and Blood</td>
+                    </tr>
+                    <tr>
+                        <td>Super Cub</td>
+                    </tr>
+                    <tr>
+                        <td>Full Dive&#58; This Ultimate Next&#45;Gen Full Dive RPG Is Even Sh&#45;ttier than Real Life!</td>
+                    </tr>
+                    <tr>
+                        <td>The Way of the Househusband</td>
+                    </tr>
+                    <tr>
+                        <td>Zombie Land Saga Revenge</td>
+                    </tr>
+                    <tr>
+                        <td>How Not to Summon a Demon Lord</td>
+                    </tr>
+                    <tr>
+                        <td>Backflip!!</td>
+                    </tr>
+                    <tr>
+                        <td>Fairy Ranmaru</td>
+                    </tr>
+                    <tr>
+                        <td>Backflip!!</td>
+                    </tr>
+                    <tr>
+                        <td>SD Gundam World Heroes</td>
+                    </tr>
+                    <tr>
+                        <td>The World Ends with You</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Reflection Ray</td>
+                    </tr>
+                    <tr>
+                        <td>Shinkansen Henkei Robo Shinkalion Z</td>
+                    </tr>
+                    <tr>
+                        <td>86</td>
+                    </tr>
+                    <tr>
+                        <td>Edens Zero</td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo Revengers</td>
+                    </tr>
+                    <tr>
+                        <td>Shadows House</td>
+                    </tr>
+                    <tr>
+                        <td>Don’t Toy With Me, Miss Nagatoro</td>
+                    </tr>
+                    <tr>
+                        <td>Pretty Boy Detective Club</td>
+                    </tr>
+                    <tr>
+                        <td>Battle Athletes Victory ReSTART!</td>
+                    </tr>
+                    <tr>
+                        <td>To Your Eternity</td>
+                    </tr>
+                    <tr>
+                        <td>Osamake&#58; Romcom Where The Childhood Friend Won’t Lose</td>
+                    </tr>
+                    <tr>
+                        <td>Cestvs&#58; The Roman Fighter</td>
+                    </tr>
+                    <tr>
+                        <td>Welcome to Demon School! Iruma&#45;kun, Season 2</td>
+                    </tr>
+                    <tr>
+                        <td>Yasuke</td>
+                    </tr>
+                    <tr>
+                        <td>Godzilla&#58; Singular Point</td>
+                    </tr>
+                    <tr>
+                        <td>I’ve Been Killing Slimes for 300 Years and Maxed Out My Level</td>
+                    </tr>
+                    <tr>
+                        <td>Higehiro&#58; After Being Rejected, I Shaved and Took In a High School Runaway</td>
+                    </tr>
+                    <tr>
+                        <td>Eden</td>
+                    </tr>
+                </tbody>
+                <!-- Configure Table Footer !-->
+                <tfoot>
+                    <tr>
+                        <td id="onecolumn">Credits to: AnimeCollective</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Add Space Between Tables !-->
+            <br><br>
+
+            <!-- Add IMG !-->
+            <img src="images/jjk.webp" alt="Jujutsu Kaisen" class="jjk" width="235" height="350">
+
+            <!-- Third Table For Recommended Anime !-->
+            <table>
+                <!-- Configure Table Header !-->
+                <thead>
+                    <tr>
+                        <th>Recommended Anime Shows</th>
+                    </tr>
+                </thead>
+                <!-- Configure Table Body: Contains Most Table Row & Data Cell Content !-->
+                <tbody>
+                    <tr id="first3">
+                        <td>Attack on Titan</td>
+                    </tr>
+                    <tr>
+                        <td>Jujutsu Kaisen</td>
+                    </tr>
+                    <tr>
+                        <td>Akame Ga Kill</td>
+                    </tr>
+                    <tr>
+                        <td>Naruto</td>
+                    </tr>
+                    <tr>
+                        <td>Naruto Shippuden</td>
+                    </tr>
+                    <tr>
+                        <td>Another</td>
+                    </tr>
+                    <tr>
+                        <td>Parasyte</td>
+                    </tr>
+                    <tr>
+                        <td>Goblin Slayer</td>
+                    </tr>
+                    <tr>
+                        <td>KonoSuba&#58; God's Blessing on this Wonderful World!</td>
+                    </tr>
+                    <tr>
+                        <td>Rascal Does Not Dream of a Dreaming Girl</td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo Ghoul</td>
+                    </tr>
+                    <tr>
+                        <td>Zatch Bell!</td>
+                    </tr>
+                    <tr>
+                        <td>Future Diary</td>
+                    </tr>
+                    <tr>
+                        <td>Kakegurui</td>
+                    </tr>
+                    <tr>
+                        <td>Hori&#45;san to Miyamura&#45;kun</td>
+                    </tr>
+                    <tr>
+                        <td>Death Note</td>
+                    </tr>
+                    <tr>
+                        <td>Demon Slayer</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Stone</td>
+                    </tr>
+                </tbody>
+                <!-- Configure Table Footer !-->
+                <tfoot>
+                    <tr>
+                        <td id="onecolumn2">Credits to: Me, these are my recommendations!</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </main>
+        <!-- Add Footer for Personal Contact !-->
+        <footer>
+            &copy; 2021 SimplyAnime - All Rights Reserved<br>
+            <a class="footerLink" href="mailto:martinezlopez.a01@mymail.sxu.edu">martinezlopez.a01@mymail.sxu.edu</a>
+        </footer>
+    </div>
+</body>
